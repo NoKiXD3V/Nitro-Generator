@@ -1,7 +1,10 @@
+from fileinput import filename
 import random, string, os, time
 from colorama import Fore, Style
 from pystyle import Colorate, Colors
-file = open("oxygen_nitros.txt", "w")
+letters = string.ascii_letters
+filename = "oxygen_nitrogen-" + ''.join(random.choice(letters) for i in range(5))
+file = open(filename+".txt", "w")
 os.system("title Oxygen Nitro Generator | Made by NoKiX")
 def clear():
     os.system("cls")

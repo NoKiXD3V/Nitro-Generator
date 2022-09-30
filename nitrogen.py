@@ -23,13 +23,8 @@ print(Colorate.Horizontal(Colors.cyan_to_blue, """
 codes = 0
 def nitro(size=16, chars=string.ascii_letters + string.digits):
     return "".join(random.choice(chars) for _ in range(size))
-print(f"{Fore.CYAN}[Oxygen Generator] {Fore.WHITE}https://discord.gift/{Style.RESET_ALL}"+nitro())
+print(f"\n{Fore.CYAN}[Oxygen Generator] {Fore.WHITE}https://discord.gift/{Style.RESET_ALL}"+nitro())
 while(True):
-    if(codes > random.randint(100000000000000000000000000000, 1000000000000000000000000000000000)):
         print(f"{Fore.CYAN}[Oxygen Generator] {Fore.WHITE}https://discord.gift/{Style.RESET_ALL}"+nitro())
-        file.write("[Oxygen Generator] https://discord.gift/"+nitro()+"\n")
-    else:
-        codes += 1000
-        print(f"{Fore.CYAN}[Oxygen Generator] {Fore.WHITE}https://discord.gift/{Style.RESET_ALL}"+nitro()) 
         file.write("[Oxygen Generator] https://discord.gift/"+nitro()+"\n")
 time.sleep(1)
